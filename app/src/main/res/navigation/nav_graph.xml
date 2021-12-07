@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_Fragment2">
+
+    <fragment
+        android:id="@+id/main_Fragment2"
+        android:name="com.example.businessplannerio.main_Fragment"
+        android:label="fragment_main_"
+        tools:layout="@layout/fragment_main_" >
+        <action
+            android:id="@+id/action_main_Fragment2_to_sales_Fragment2"
+            app:destination="@id/sales_Fragment2" />
+        <action
+            android:id="@+id/action_main_Fragment2_to_business_development_Fragment2"
+            app:destination="@id/business_development_Fragment2" />
+        <action
+            android:id="@+id/action_main_Fragment2_to_marketing_Fragment2"
+            app:destination="@id/marketing_Fragment2" />
+        <action
+            android:id="@+id/action_main_Fragment2_to_economy_Fragment2"
+            app:destination="@id/economy_Fragment2" />
+        <action
+            android:id="@+id/action_main_Fragment2_to_law_Fragment2"
+            app:destination="@id/law_Fragment2" />
+        <action
+            android:id="@+id/action_main_Fragment2_to_experience_Fragment2"
+            app:destination="@id/experience_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/business_development_Fragment2"
+        android:name="com.example.businessplannerio.business_development_Fragment"
+        android:label="fragment_business_development_"
+        tools:layout="@layout/fragment_business_development_" >
+        <action
+            android:id="@+id/action_business_development_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/economy_Fragment2"
+        android:name="com.example.businessplannerio.economy_Fragment"
+        android:label="fragment_economy_"
+        tools:layout="@layout/fragment_economy_" >
+        <action
+            android:id="@+id/action_economy_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/law_Fragment2"
+        android:name="com.example.businessplannerio.law_Fragment"
+        android:label="fragment_law_"
+        tools:layout="@layout/fragment_law_" >
+        <action
+            android:id="@+id/action_law_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/marketing_Fragment2"
+        android:name="com.example.businessplannerio.marketing_Fragment"
+        android:label="fragment_marketing_"
+        tools:layout="@layout/fragment_marketing_" >
+        <action
+            android:id="@+id/action_marketing_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/sales_Fragment2"
+        android:name="com.example.businessplannerio.sales_Fragment"
+        android:label="fragment_sales_"
+        tools:layout="@layout/fragment_sales_" >
+        <action
+            android:id="@+id/action_sales_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/experience_Fragment2"
+        android:name="com.example.businessplannerio.experience_Fragment"
+        android:label="fragment_experience_"
+        tools:layout="@layout/fragment_experience_" >
+        <action
+            android:id="@+id/action_experience_Fragment2_to_language_Fragment2"
+            app:destination="@id/language_Fragment2" />
+        <action
+            android:id="@+id/action_experience_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/language_Fragment2"
+        android:name="com.example.businessplannerio.language_Fragment"
+        android:label="fragment_language_"
+        tools:layout="@layout/fragment_language_" >
+        <action
+            android:id="@+id/action_language_Fragment2_to_country_Fragment2"
+            app:destination="@id/country_Fragment2" />
+        <action
+            android:id="@+id/action_language_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/country_Fragment2"
+        android:name="com.example.businessplannerio.country_Fragment"
+        android:label="fragment_country_"
+        tools:layout="@layout/fragment_country_" >
+        <action
+            android:id="@+id/action_country_Fragment2_to_mentor_list_Fragment2"
+            app:destination="@id/mentor_list_Fragment2" />
+        <action
+            android:id="@+id/action_country_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentor_list_Fragment2"
+        android:name="com.example.businessplannerio.mentor_list_Fragment"
+        android:label="fragment_mentor_list_"
+        tools:layout="@layout/fragment_mentor_list_" >
+        <action
+            android:id="@+id/action_mentor_list_Fragment2_to_main_Fragment2"
+            app:destination="@id/main_Fragment2" />
+    </fragment>
+</navigation>
