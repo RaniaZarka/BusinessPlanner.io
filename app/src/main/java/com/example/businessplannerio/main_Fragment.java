@@ -29,4 +29,5 @@ public class main_Fragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main_, container, false);
     }
+
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"
+        android:iconTint="@color/white"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="search"
+        android:iconTint="@color/white"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_email"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="email"
+        android:iconTint="@color/white"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_person"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="person"
+        android:iconTint="@color/white"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_drawer"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="menu"
+        android:iconTint="@color/white"
+        app:showAsAction="always">
+        <menu>
+        <item
+            android:id="@+id/drawer_seekmentor"
+            android:title="Seek mentor" />
+        <item
+            android:id="@+id/drawer_shareplan"
+            android:title="Share plan" />
+        <item
+            android:id="@+id/drawer_seeplan"
+            android:title="See plan" />
+        <item
+            android:id="@+id/drawer_myfrontpage"
+            android:title="My front page" />
+        </menu>
+    </item>
+</menu>
