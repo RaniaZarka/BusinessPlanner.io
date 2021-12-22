@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/main_Fragment2"
-        android:name="com.example.businessplannerio.main_Fragment"
+        android:name="com.example.businessplannerio.UI.main_Fragment"
         android:label="fragment_main_"
         tools:layout="@layout/fragment_main_" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/business_development_Fragment2"
-        android:name="com.example.businessplannerio.business_development_Fragment"
+        android:name="com.example.businessplannerio.UI.business_development_Fragment"
         android:label="fragment_business_development_"
         tools:layout="@layout/fragment_business_development_" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/economy_Fragment2"
-        android:name="com.example.businessplannerio.economy_Fragment"
+        android:name="com.example.businessplannerio.UI.economy_Fragment"
         android:label="fragment_economy_"
         tools:layout="@layout/fragment_economy_" >
         <action
@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/law_Fragment2"
-        android:name="com.example.businessplannerio.law_Fragment"
+        android:name="com.example.businessplannerio.UI.law_Fragment"
         android:label="fragment_law_"
         tools:layout="@layout/fragment_law_" >
         <action
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/marketing_Fragment2"
-        android:name="com.example.businessplannerio.marketing_Fragment"
+        android:name="com.example.businessplannerio.UI.marketing_Fragment"
         android:label="fragment_marketing_"
         tools:layout="@layout/fragment_marketing_" >
         <action
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/sales_Fragment2"
-        android:name="com.example.businessplannerio.sales_Fragment"
+        android:name="com.example.businessplannerio.UI.sales_Fragment"
         android:label="fragment_sales_"
         tools:layout="@layout/fragment_sales_" >
         <action
@@ -76,7 +76,7 @@
     </fragment>
     <fragment
         android:id="@+id/experience_Fragment2"
-        android:name="com.example.businessplannerio.experience_Fragment"
+        android:name="com.example.businessplannerio.UI.experience_Fragment"
         android:label="fragment_experience_"
         tools:layout="@layout/fragment_experience_" >
         <action
@@ -88,7 +88,7 @@
     </fragment>
     <fragment
         android:id="@+id/language_Fragment2"
-        android:name="com.example.businessplannerio.language_Fragment"
+        android:name="com.example.businessplannerio.UI.language_Fragment"
         android:label="fragment_language_"
         tools:layout="@layout/fragment_language_" >
         <action
@@ -100,7 +100,7 @@
     </fragment>
     <fragment
         android:id="@+id/country_Fragment2"
-        android:name="com.example.businessplannerio.country_Fragment"
+        android:name="com.example.businessplannerio.UI.country_Fragment"
         android:label="fragment_country_"
         tools:layout="@layout/fragment_country_" >
         <action
@@ -112,7 +112,7 @@
     </fragment>
     <fragment
         android:id="@+id/mentor_list_Fragment2"
-        android:name="com.example.businessplannerio.mentor_list_Fragment"
+        android:name="com.example.businessplannerio.UI.mentor_list_Fragment"
         android:label="fragment_mentor_list_"
         tools:layout="@layout/fragment_mentor_list_" >
         <action

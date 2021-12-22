@@ -1,4 +1,4 @@
-package com.example.businessplannerio;
+package com.example.businessplannerio.UI;
 
 import android.os.Bundle;
 
@@ -8,13 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class business_development_Fragment extends Fragment {
+import com.example.businessplannerio.R;
 
 
+public class country_Fragment extends Fragment {
 
-    public business_development_Fragment() {
+
+    public country_Fragment() {
         // Required empty public constructor
     }
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,6 @@ public class business_development_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_business_development_, container, false);
+        return inflater.inflate(R.layout.fragment_country_, container, false);
     }
 }

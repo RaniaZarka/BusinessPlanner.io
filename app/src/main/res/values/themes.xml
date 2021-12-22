@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
 
     <style name="Theme.BusinessPlannerio"
-        parent="Theme.MaterialComponents.Light.NoActionBar">
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/dark_blue</item>
         <item name="colorPrimaryVariant">@color/dark_blue</item>
