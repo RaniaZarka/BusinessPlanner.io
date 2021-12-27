@@ -9,8 +9,6 @@
     android:layout_margin="7dp"
     android:orientation="vertical">
 
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -20,10 +18,8 @@
         android:paddingTop="20dp"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:id="@+id/sub_qualificationText"
+        android:id="@+id/experienceText"
         android:textAppearance="?android:attr/textAppearanceMedium"
         />
-
-
 
 </androidx.cardview.widget.CardView>

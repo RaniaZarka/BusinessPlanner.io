@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:id="@+id/lawFragmentLayout"
     tools:context=".UI.law_Fragment">
 
 
@@ -15,13 +16,14 @@
         android:orientation="vertical"
         android:layout_marginTop="70dp"
         >
+
         <ImageButton
+            android:id="@+id/lawBack"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_backspace_24"
             android:background="@color/white"
-            android:id="@+id/backBusiness"/>
+            android:src="@drawable/ic_baseline_backspace_24" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -31,22 +33,6 @@
             android:textColor="@color/black"
             android:text="What sub-categories are you looking for"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="11sp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:text="You can select a maximum of 5 sub-categories"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="11sp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:text="Law"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,6 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             app:backgroundTint="@color/light_blue"
+            android:id="@+id/lawDone"
             android:text="Done" />
     </LinearLayout>
 

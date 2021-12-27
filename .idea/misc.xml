@@ -11,7 +11,9 @@
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/activity_main.xml" value="0.19444444444444445" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/bottom_bar_layout.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/bottom_navigation_layout.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/country_recycler.xml" value="0.16576086956521738" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/drawer_layout.xml" value="0.1403985507246377" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/field_recycler.xml" value="0.16576086956521738" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_business_development_.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_country_.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_economy_.xml" value="0.25416666666666665" />
@@ -21,7 +23,9 @@
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_main_.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_marketing_.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_mentor_list_.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_my_page_.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/fragment_sales_.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/language_recycler.xml" value="0.16576086956521738" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/qualification_recycler.xml" value="0.11398176291793313" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/sub_qualification_recycler.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/BusinessPlannerio/app/src/main/res/layout/toolbar_layout.xml" value="0.2" />

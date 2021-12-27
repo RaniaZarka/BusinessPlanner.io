@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.businessplannerio.R;
@@ -37,7 +38,6 @@ public class main_Fragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +54,7 @@ public class main_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_main_, container, false);
-        no_more_btn = view.findViewById(R.id.main_no_more_btn);
+        no_more_btn = view.findViewById(R.id.main_no_more);
         no_more_btn.setOnClickListener(onCLickNext);
 
         return view;
@@ -98,7 +98,7 @@ public class main_Fragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         adapter.setClickListener((view, position, item) -> {
-            qualification q = item;
+
             Log.d(MESSAGE, "item is: " + item.toString());
             if(position==0){
                 Navigation.findNavController(requireView()).navigate(R.id.business_development_Fragment2);
@@ -115,7 +115,6 @@ public class main_Fragment extends Fragment {
              if(position==4){
                  Navigation.findNavController(requireView()).navigate(R.id.sales_Fragment2);
              }
-
         });
 
     }
@@ -132,5 +131,6 @@ public class main_Fragment extends Fragment {
             Navigation.findNavController(requireView()).navigate(R.id.experience_Fragment2);
         }
     };
+
 
 }
