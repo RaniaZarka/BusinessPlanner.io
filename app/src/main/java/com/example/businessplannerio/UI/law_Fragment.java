@@ -60,6 +60,7 @@ public class law_Fragment extends Fragment {
         back.setOnClickListener(onClickBack);
         return view;
     }
+
     public void getAndShowAllSubQualification() {
 
         ApiServices services = ApiUtils.getDataService();
@@ -77,25 +78,20 @@ public class law_Fragment extends Fragment {
                 } else {
                     String message = response.code() + " " + response.message();
                     Log.d(LAW, "the problem is: " + message);
-                    //viewQualification.setText(message);
                 }
             }
-
-
             @Override
             public void onFailure(Call<List<sub_qualification>> call, Throwable t) {
                 Log.e(LAW, t.getMessage());
-                //viewQualification.setText(t.getMessage());
             }
         });
     }
 
-    private void populateRecycleView(List<sub_qualification> allBusinessqualifications) {
+    private void populateRecycleView(List<sub_qualification> allLawqualifications) {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.lawRecyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(requireContext(),2));
-        adapter = new sub_qualificationRecycleView(requireContext(), allBusinessqualifications);
+        adapter = new sub_qualificationRecycleView(requireContext(), allLawqualifications);
         recyclerView.setAdapter(adapter);
-
     }
 
     private View findViewById(int id) {

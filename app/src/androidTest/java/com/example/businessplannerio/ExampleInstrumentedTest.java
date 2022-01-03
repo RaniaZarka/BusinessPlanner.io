@@ -39,7 +39,6 @@ public class ExampleInstrumentedTest {
     @Test
 
     public void qualificationRecycleViewVisible(){
-
       onView(withId(R.id.qualificationRecyclerView)).check(matches(isDisplayed()));
     }
 
@@ -49,11 +48,31 @@ public class ExampleInstrumentedTest {
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
         onView(withId(R.id.businessFragmentLayout)).check(matches(isDisplayed()));
     }
-
     @Test
-    public void BackButtonBusinessTest(){
-        onView(withId(R.id.businessDone)).perform(click());
-        onView(withId(R.id.qualificationRecyclerView)).check(matches(isDisplayed()));
+    public void NavigationToLawFragment(){
+        onView(withId(R.id.qualificationRecyclerView))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(1, click()));
+        onView(withId(R.id.lawFragmentLayout)).check(matches(isDisplayed()));
     }
+    @Test
+    public void NavigationToMarketingFragment(){
+        onView(withId(R.id.qualificationRecyclerView))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+        onView(withId(R.id.marketingFragmentLayout)).check(matches(isDisplayed()));
+    }
+    @Test
+    public void NavigationToEconomyFragment(){
+        onView(withId(R.id.qualificationRecyclerView))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(3, click()));
+        onView(withId(R.id.economyFragmentLayout)).check(matches(isDisplayed()));
+    }
+    @Test
+    public void NavigationToSaleFragment(){
+        onView(withId(R.id.qualificationRecyclerView))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(4, click()));
+        onView(withId(R.id.salesFragmentLayout)).check(matches(isDisplayed()));
+    }
+
+
 
 }

@@ -80,7 +80,6 @@ public class main_Fragment extends Fragment {
                 }
             }
 
-
             @Override
             public void onFailure(Call<List<qualification>> call, Throwable t) {
                 Log.e(MESSAGE, t.getMessage());

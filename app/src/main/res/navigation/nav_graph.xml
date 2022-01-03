@@ -76,7 +76,7 @@
     </fragment>
     <fragment
         android:id="@+id/experience_Fragment2"
-        android:name="com.example.businessplannerio.UI.experience_Fragment"
+        android:name="com.example.businessplannerio.UI.field_Fragment"
         android:label="fragment_experience_"
         tools:layout="@layout/fragment_experience_" >
         <action

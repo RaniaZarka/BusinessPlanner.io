@@ -18,10 +18,8 @@ import android.widget.TextView;
 import com.example.businessplannerio.R;
 import com.example.businessplannerio.WebApi.ApiServices;
 import com.example.businessplannerio.WebApi.ApiUtils;
-import com.example.businessplannerio.model.language;
-import com.example.businessplannerio.model.sub_qualification;
-import com.example.businessplannerio.recyclingView.languageRecycleView;
-import com.example.businessplannerio.recyclingView.sub_qualificationRecycleView;
+import com.example.businessplannerio.model.field;
+import com.example.businessplannerio.recyclingView.fieldRecycleView;
 
 import java.util.List;
 
@@ -29,72 +27,70 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class language_Fragment extends Fragment {
 
-    public static final String LANGUAGE = "language";
-    languageRecycleView adapter;
+public class field_Fragment extends Fragment {
+    public static final String EXPERIENCE = "experience";
+    fieldRecycleView adapter;
     Button done;
     ImageButton back;
-    TextView viewSubQualification;
+    TextView viewExperience;
 
-    public language_Fragment() {
+    public field_Fragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllLanguages();
+         getAndShowAllexperiences();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_language_, container, false);
-        done = view.findViewById(R.id.languageDone);
+        View view=inflater.inflate(R.layout.fragment_experience_, container, false);
+        done = view.findViewById(R.id.experienceDone);
         done.setOnClickListener(onCLickDone);
-        back= view.findViewById(R.id.languageBack);
+        back= view.findViewById(R.id.experienceBack);
         back.setOnClickListener(onClickBack);
 
         return view;
     }
-
-    public void getAndShowAllLanguages() {
+   public void getAndShowAllexperiences() {
 
         ApiServices services = ApiUtils.getDataService();
-        Call<List<language>> getAllLanguageCall = services.getAllLanguages();
+        Call<List<field>> getAllExperienceCall = services.getAllExperience();
 
-        getAllLanguageCall.enqueue(new Callback<List<language>>() {
+        getAllExperienceCall.enqueue(new Callback<List<field>>() {
             @Override
-            public void onResponse(Call<List<language>> call, Response<List<language>> response) {
-                Log.d(LANGUAGE, " response is  " +response.raw().toString());
+            public void onResponse(Call<List<field>> call, Response<List<field>> response) {
+                Log.d(EXPERIENCE, " response is  " +response.raw().toString());
 
                 if (response.isSuccessful()) {
-                    List<language> allLanguages = response.body();
-                    Log.d(LANGUAGE, "the languages are " + allLanguages.toString());
-                    populateRecycleView(allLanguages);
+                    List<field> allExperience = response.body();
+                    Log.d(EXPERIENCE, "the sub_qualifications are " + allExperience.toString());
+                    populateRecycleView(allExperience);
                 } else {
                     String message = response.code() + " " + response.message();
-                    Log.d(LANGUAGE, "the problem is: " + message);
+                    Log.d(EXPERIENCE, "the problem is: " + message);
                     //viewQualification.setText(message);
                 }
             }
 
 
             @Override
-            public void onFailure(Call<List<language>> call, Throwable t) {
-                Log.e(LANGUAGE, t.getMessage());
+            public void onFailure(Call<List<field>> call, Throwable t) {
+                Log.e(EXPERIENCE, t.getMessage());
                 //viewQualification.setText(t.getMessage());
             }
         });
     }
 
-    private void populateRecycleView(List<language> allLanguages) {
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.languageRecyclerView);
+    private void populateRecycleView(List<field> allExperience) {
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.experienceRecyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(requireContext(),2));
-        adapter = new languageRecycleView(requireContext(), allLanguages);
+        adapter = new fieldRecycleView(requireContext(), allExperience);
         recyclerView.setAdapter(adapter);
 
     }
@@ -112,7 +108,7 @@ public class language_Fragment extends Fragment {
     View.OnClickListener onCLickDone = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Navigation.findNavController(requireView()).navigate(R.id.country_Fragment2);
+            Navigation.findNavController(requireView()).navigate(R.id.language_Fragment2);
         }
     };
 
