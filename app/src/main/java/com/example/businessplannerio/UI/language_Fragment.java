@@ -45,7 +45,7 @@ public class language_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllLanguages();
+
     }
 
     @Override
@@ -57,7 +57,7 @@ public class language_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.languageBack);
         back.setOnClickListener(onClickBack);
-
+        getAndShowAllLanguages();
         return view;
     }
 

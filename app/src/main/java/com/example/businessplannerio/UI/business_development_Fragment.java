@@ -42,7 +42,7 @@ public class business_development_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllSubQualification();
+
 
     }
 
@@ -56,6 +56,7 @@ public class business_development_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.businessBack);
         back.setOnClickListener(onClickBack);
+        getAndShowAllSubQualification();
         return view;
     }
 
@@ -75,7 +76,7 @@ public class business_development_Fragment extends Fragment {
                 } else {
                     String message = response.code() + " " + response.message();
                     Log.d(BUSINESS, "the problem is: " + message);
-                    //viewQualification.setText(message);
+
                 }
             }
 
@@ -83,7 +84,6 @@ public class business_development_Fragment extends Fragment {
             @Override
             public void onFailure(Call<List<sub_qualification>> call, Throwable t) {
                 Log.e(BUSINESS, t.getMessage());
-                //viewQualification.setText(t.getMessage());
             }
         });
     }

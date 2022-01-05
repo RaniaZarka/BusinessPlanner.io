@@ -44,7 +44,7 @@ public class sales_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllSubQualification();
+
     }
 
     @Override
@@ -56,6 +56,7 @@ public class sales_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.salesBack);
         back.setOnClickListener(onClickBack);
+        getAndShowAllSubQualification();
        return view;
     }
     public void getAndShowAllSubQualification() {

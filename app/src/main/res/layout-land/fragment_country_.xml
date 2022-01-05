@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".UI.country_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        >
+
+        <ImageButton
+            android:id="@+id/countryBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_backspace_24" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="What country should your mentor have experience with"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/countryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/light_blue"
+            android:id="@+id/countryDone"
+            android:text="Done" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -9,11 +9,6 @@
 
     tools:context=".MainActivity">
 
-
-
-
-
-
    <include layout="@layout/topbar_layout" />
 
     <androidx.fragment.app.FragmentContainerView

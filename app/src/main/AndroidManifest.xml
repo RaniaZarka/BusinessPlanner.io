@@ -9,11 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:configChanges="orientation|screenLayout"
+        android:configChanges="orientation|keyboardHidden"
         android:theme="@style/Theme.BusinessPlannerio">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

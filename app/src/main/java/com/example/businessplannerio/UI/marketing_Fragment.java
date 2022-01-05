@@ -45,7 +45,7 @@ public class marketing_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllSubQualification();
+        //getAndShowAllSubQualification();
     }
 
     @Override
@@ -57,7 +57,7 @@ public class marketing_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.marketingBack);
         back.setOnClickListener(onClickBack);
-
+        getAndShowAllSubQualification();
         return view;
     }
     public void getAndShowAllSubQualification() {
@@ -80,7 +80,6 @@ public class marketing_Fragment extends Fragment {
                     //viewQualification.setText(message);
                 }
             }
-
 
             @Override
             public void onFailure(Call<List<sub_qualification>> call, Throwable t) {

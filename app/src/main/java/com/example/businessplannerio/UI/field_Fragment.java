@@ -42,7 +42,7 @@ public class field_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         getAndShowAllexperiences();
+
     }
 
     @Override
@@ -54,7 +54,7 @@ public class field_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.experienceBack);
         back.setOnClickListener(onClickBack);
-
+        getAndShowAllexperiences();
         return view;
     }
    public void getAndShowAllexperiences() {

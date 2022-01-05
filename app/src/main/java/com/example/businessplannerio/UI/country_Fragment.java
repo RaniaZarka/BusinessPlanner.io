@@ -43,7 +43,7 @@ public class country_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllCountry();
+
 
     }
 
@@ -55,7 +55,7 @@ public class country_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.countryBack);
         back.setOnClickListener(onClickBack);
-
+        getAndShowAllCountry();
         return view;
     }
       public void getAndShowAllCountry() {

@@ -44,7 +44,7 @@ public class law_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllSubQualification();
+
 
     }
 
@@ -58,6 +58,7 @@ public class law_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.lawBack);
         back.setOnClickListener(onClickBack);
+        getAndShowAllSubQualification();
         return view;
     }
 

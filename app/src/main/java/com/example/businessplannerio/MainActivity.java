@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.ClipData;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.toolbar_menu, menu);
         return true;
     }
+
+ /*   @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        // ignore orientation/keyboard change
+        super.onConfigurationChanged(newConfig);
+    }*/
 
 
    /*  @Override

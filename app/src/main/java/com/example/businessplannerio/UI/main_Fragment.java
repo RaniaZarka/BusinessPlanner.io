@@ -46,7 +46,6 @@ public class main_Fragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        getAndShowAllQualifications();
     }
 
     @Override
@@ -56,7 +55,7 @@ public class main_Fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main_, container, false);
         no_more_btn = view.findViewById(R.id.main_no_more);
         no_more_btn.setOnClickListener(onCLickNext);
-
+        getAndShowAllQualifications();
         return view;
     }
     private void getAndShowAllQualifications() {

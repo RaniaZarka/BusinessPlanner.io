@@ -45,7 +45,7 @@ public class economy_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getAndShowAllSubQualification();
+
     }
 
     @Override
@@ -57,6 +57,7 @@ public class economy_Fragment extends Fragment {
         done.setOnClickListener(onCLickDone);
         back= view.findViewById(R.id.economyBack);
         back.setOnClickListener(onClickBack);
+        getAndShowAllSubQualification();
         return view;
     }
     public void getAndShowAllSubQualification() {

@@ -32,7 +32,7 @@
         android:title="menu"
         android:iconTint="@color/white"
         app:showAsAction="always">
-        <menu>
+        <menu android:id="@+id/drawer_menu">
         <item
             android:id="@+id/drawer_seekmentor"
             android:title="Seek mentor" />

@@ -9,6 +9,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 import android.content.Context;
 
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.test.espresso.ViewAssertion;
+import androidx.test.espresso.contrib.DrawerActions;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -27,8 +30,11 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+
     @Rule
     public ActivityScenarioRule rule = new ActivityScenarioRule<>(MainActivity.class);
+
+
     @Test
     public void useAppContext() {
         // Context of the app under test.
@@ -72,7 +78,21 @@ public class ExampleInstrumentedTest {
                 .perform(RecyclerViewActions.actionOnItemAtPosition(4, click()));
         onView(withId(R.id.salesFragmentLayout)).check(matches(isDisplayed()));
     }
+    
+    @Test
+    public void DoneBtnClickedLawPage() {
+        onView(withId(R.id.qualificationRecyclerView))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(1, click()));
+        onView(withId(R.id.lawDone)).perform(click());
+        onView(withId(R.id.main_no_more)).check(matches(isDisplayed()));
+    }
 
-
+    @Test
+    public void BackBtnClickedLawPage() {
+        onView(withId(R.id.qualificationRecyclerView))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(1, click()));
+        onView(withId(R.id.lawBack)).perform(click());
+        onView(withId(R.id.main_no_more)).check(matches(isDisplayed()));
+    }
 
 }
